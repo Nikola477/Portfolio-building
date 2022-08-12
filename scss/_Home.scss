@@ -1,0 +1,22 @@
+.Home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: url('./../images/HR\ img.jpg');
+    background-size: cover;
+    }
+    .your-name{
+        font-size: 3rem;
+        padding: 1rem;
+        border-bottom: 1px solid set-color($color1);
+
+        &_last{
+            color: $color3;
+            font-weight: 400;
+        }
+
+}

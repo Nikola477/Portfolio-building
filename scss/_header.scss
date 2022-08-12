@@ -1,0 +1,45 @@
+
+//standard header plus transition, trying not to nest too much
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    nav{
+        width: 100vw;
+        opacity: 2;
+        justify-content: right;
+        display: flex;
+        .manu-nav {
+            display: flex;
+            justify-content: center;
+            padding: 1.3rem;
+            align-items: center;
+            overflow: hidden;
+            background: transparent;
+            list-style-type: none;
+            transition: all 0.3s ease-in;
+            &_item {
+                   padding: 2rem;
+                   transition: all 0.3s ease-in;
+            } 
+            &_link {
+                transition: all 0.3s ease-in;
+                font-size: 20px;
+                font-weight: 200;
+                &:hover {
+                    color: $color2;
+                }
+                &.active {
+                    color: $color2;
+                }
+
+            }
+        }
+    }
+    .menu-container {
+        .button-resp{
+
+        }
+    }
+}

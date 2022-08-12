@@ -1,0 +1,22 @@
+$color1: #4d4d33;
+$color2: #989812;
+$color3: #881111;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@function set-color($color) {
+    @if(lightness($color) > 40%) {
+        @return #000;
+    }@else {
+        @return #fff;
+    }
+}
+
+a {
+    color: set-color($color1);
+    text-decoration: none;
+}
